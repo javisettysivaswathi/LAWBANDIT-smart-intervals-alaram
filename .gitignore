@@ -1,0 +1,347 @@
+Last login: Sat Sep 13 09:43:29 on ttys000
+swathijavisetty@Swathis-Air ~ % cd Downloads 
+swathijavisetty@Swathis-Air Downloads % cd SMART-INTERVALS-ALARAM             
+swathijavisetty@Swathis-Air SMART-INTERVALS-ALARAM % npm install
+
+
+removed 2 packages, and audited 100 packages in 5s
+
+14 packages are looking for funding
+  run `npm fund` for details
+
+found 0 vulnerabilities
+swathijavisetty@Swathis-Air SMART-INTERVALS-ALARAM % npm run build
+
+> smart-interval-alarm@1.0.0 build
+> tsc
+
+error TS18003: No inputs were found in config file '/Users/swathijavisetty/Downloads/SMART-INTERVALS-ALARAM/tsconfig.json'. Specified 'include' paths were '["server.ts","public/script.ts"]' and 'exclude' paths were '["/Users/swathijavisetty/Downloads/SMART-INTERVALS-ALARAM/dist"]'.
+
+
+Found 1 error.
+
+swathijavisetty@Swathis-Air SMART-INTERVALS-ALARAM % npm run build
+
+> smart-interval-alarm@1.0.0 build
+> tsc
+
+error TS18003: No inputs were found in config file '/Users/swathijavisetty/Downloads/SMART-INTERVALS-ALARAM/tsconfig.json'. Specified 'include' paths were '["server.ts","public/**/*.ts"]' and 'exclude' paths were '["/Users/swathijavisetty/Downloads/SMART-INTERVALS-ALARAM/dist"]'.
+
+
+Found 1 error.
+
+swathijavisetty@Swathis-Air SMART-INTERVALS-ALARAM % ls
+FRONTEND		node_modules		tsconfig.json
+SRC			package-lock.json
+dist			package.json
+swathijavisetty@Swathis-Air SMART-INTERVALS-ALARAM % npm run build
+
+> smart-interval-alarm@1.0.0 build
+> tsc
+
+FRONTEND/script.ts:12:7 - error TS2451: Cannot redeclare block-scoped variable 'status'.
+
+12 const status = document.getElementById('status') as HTMLHeadingElement;
+         ~~~~~~
+
+  node_modules/typescript/lib/lib.dom.d.ts:38649:13
+    38649 declare var status: string;
+                      ~~~~~~
+    'status' was also declared here.
+
+FRONTEND/script.ts:70:12 - error TS2339: Property 'textContent' does not exist on type 'string'.
+
+70     status.textContent = 'Status: Running';
+              ~~~~~~~~~~~
+
+FRONTEND/script.ts:74:12 - error TS2339: Property 'textContent' does not exist on type 'string'.
+
+74     status.textContent = 'Status: Resumed';
+              ~~~~~~~~~~~
+
+FRONTEND/script.ts:82:14 - error TS2339: Property 'textContent' does not exist on type 'string'.
+
+82       status.textContent = 'Status: Completed';
+                ~~~~~~~~~~~
+
+FRONTEND/script.ts:105:12 - error TS2339: Property 'textContent' does not exist on type 'string'.
+
+105     status.textContent = 'Status: Paused';
+               ~~~~~~~~~~~
+
+FRONTEND/script.ts:115:10 - error TS2339: Property 'textContent' does not exist on type 'string'.
+
+115   status.textContent = 'Status: Stopped';
+             ~~~~~~~~~~~
+
+FRONTEND/script.ts:128:10 - error TS2339: Property 'textContent' does not exist on type 'string'.
+
+128   status.textContent = 'Status: Ready';
+             ~~~~~~~~~~~
+
+node_modules/typescript/lib/lib.dom.d.ts:38649:13 - error TS2451: Cannot redeclare block-scoped variable 'status'.
+
+38649 declare var status: string;
+                  ~~~~~~
+
+  FRONTEND/script.ts:12:7
+    12 const status = document.getElementById('status') as HTMLHeadingElement;
+             ~~~~~~
+    'status' was also declared here.
+
+
+Found 8 errors in 2 files.
+
+Errors  Files
+     7  FRONTEND/script.ts:12
+     1  node_modules/typescript/lib/lib.dom.d.ts:38649
+swathijavisetty@Swathis-Air SMART-INTERVALS-ALARAM % npm install
+
+
+up to date, audited 100 packages in 4s
+
+14 packages are looking for funding
+  run `npm fund` for details
+
+found 0 vulnerabilities
+swathijavisetty@Swathis-Air SMART-INTERVALS-ALARAM % npm run build
+
+> smart-interval-alarm@1.0.0 build
+> tsc
+
+swathijavisetty@Swathis-Air SMART-INTERVALS-ALARAM % npm run dev
+
+> smart-interval-alarm@1.0.0 dev
+> ts-node server.ts
+
+node:internal/modules/cjs/loader:1386
+  throw err;
+  ^
+
+Error: Cannot find module './server.ts'
+Require stack:
+- /Users/swathijavisetty/Downloads/SMART-INTERVALS-ALARAM/imaginaryUncacheableRequireResolveScript
+    at Function._resolveFilename (node:internal/modules/cjs/loader:1383:15)
+    at Function.resolve (node:internal/modules/helpers:157:19)
+    at requireResolveNonCached (/Users/swathijavisetty/Downloads/SMART-INTERVALS-ALARAM/node_modules/ts-node/dist/bin.js:549:16)
+    at getProjectSearchDir (/Users/swathijavisetty/Downloads/SMART-INTERVALS-ALARAM/node_modules/ts-node/dist/bin.js:519:40)
+    at phase3 (/Users/swathijavisetty/Downloads/SMART-INTERVALS-ALARAM/node_modules/ts-node/dist/bin.js:267:27)
+    at bootstrap (/Users/swathijavisetty/Downloads/SMART-INTERVALS-ALARAM/node_modules/ts-node/dist/bin.js:47:30)
+    at main (/Users/swathijavisetty/Downloads/SMART-INTERVALS-ALARAM/node_modules/ts-node/dist/bin.js:33:12)
+    at Object.<anonymous> (/Users/swathijavisetty/Downloads/SMART-INTERVALS-ALARAM/node_modules/ts-node/dist/bin.js:579:5)
+    at Module._compile (node:internal/modules/cjs/loader:1706:14)
+    at Object..js (node:internal/modules/cjs/loader:1839:10) {
+  code: 'MODULE_NOT_FOUND',
+  requireStack: [
+    '/Users/swathijavisetty/Downloads/SMART-INTERVALS-ALARAM/imaginaryUncacheableRequireResolveScript'
+  ]
+}
+
+Node.js v22.19.0
+swathijavisetty@Swathis-Air SMART-INTERVALS-ALARAM % npm run dev
+
+> smart-interval-alarm@1.0.0 dev
+> ts-node src/server.ts
+
+swathijavisetty@Swathis-Air SMART-INTERVALS-ALARAM % npm run build
+
+> smart-interval-alarm@1.0.0 build
+> tsc
+
+swathijavisetty@Swathis-Air SMART-INTERVALS-ALARAM % npm run start
+
+> smart-interval-alarm@1.0.0 start
+> node dist/server.js
+
+Server running at http://localhost:3000
+^X^C
+^C
+swathijavisetty@Swathis-Air SMART-INTERVALS-ALARAM % npx tsc FRONTEND/script.ts --outDir FRONTEND
+
+swathijavisetty@Swathis-Air SMART-INTERVALS-ALARAM % npx tsc FRONTEND/script.ts --outDir FRONTEND
+
+swathijavisetty@Swathis-Air SMART-INTERVALS-ALARAM % npm run start
+
+> smart-interval-alarm@1.0.0 start
+> node dist/server.js
+
+Server running at http://localhost:3000
+^C
+swathijavisetty@Swathis-Air SMART-INTERVALS-ALARAM % vercel
+Vercel CLI 47.1.0
+🔍  Inspect: https://vercel.com/sivaswathijavisettys-projects/smart-intervals-alaram/G7vNHE68GZRNLPo8vtbMWE1M5kZu [2s]
+✅  Preview: https://smart-intervals-alaram-cwpjux33o-sivaswathijavisettys-projects.vercel.app [2s]
+Error: No entrypoint found. Searched for: 
+- app.{js,cjs,mjs,ts,cts,mts}
+- index.{js,cjs,mjs,ts,cts,mts}
+- server.{js,cjs,mjs,ts,cts,mts}
+- src/app.{js,cjs,mjs,ts,cts,mts}
+- src/index.{js,cjs,mjs,ts,cts,mts}
+- src/server.{js,cjs,mjs,ts,cts,mts}
+swathijavisetty@Swathis-Air SMART-INTERVALS-ALARAM % vercel link
+Vercel CLI 47.1.0
+? Set up “~/Downloads/SMART-INTERVALS-ALARAM”? yes
+? Which scope should contain your project? Sivaswathijavisetty's projects
+? Found project “sivaswathijavisettys-projects/smart-intervals-alaram”. Link to
+it? no
+? Link to different existing project? no
+? What’s your project’s name? smart-intervals-alarams
+? In which directory is your code located? ././
+Local settings detected in vercel.json:
+Auto-detected Project Settings (Express):
+- Build Command: None
+- Development Command: None
+- Install Command: `yarn install`, `pnpm install`, `npm install`, or `bun install`
+- Output Directory: N/A
+? Want to modify these settings? no
+? Do you want to change additional project settings? no
+✅  Linked to sivaswathijavisettys-projects/smart-intervals-alarams (created .vercel)
+swathijavisetty@Swathis-Air SMART-INTERVALS-ALARAM % vercel --prod
+Vercel CLI 47.1.0
+🔍  Inspect: https://vercel.com/sivaswathijavisettys-projects/smart-intervals-alarams/q3koaYdaWXBHv6XAtKH4oxDpk1QV [1s]
+✅  Production: https://smart-intervals-alarams-l0um0nv4b-sivaswathijavisettys-projects.vercel.app [1s]
+Error: No entrypoint found. Searched for: 
+- app.{js,cjs,mjs,ts,cts,mts}
+- index.{js,cjs,mjs,ts,cts,mts}
+- server.{js,cjs,mjs,ts,cts,mts}
+- src/app.{js,cjs,mjs,ts,cts,mts}
+- src/index.{js,cjs,mjs,ts,cts,mts}
+- src/server.{js,cjs,mjs,ts,cts,mts}
+swathijavisetty@Swathis-Air SMART-INTERVALS-ALARAM % vercel --prod
+Vercel CLI 47.1.0
+🔍  Inspect: https://vercel.com/sivaswathijavisettys-projects/smart-intervals-alarams/CpmMXim4EbbMSpHuf8sGwqY18esh [2s]
+✅  Production: https://smart-intervals-alarams-j8ckuiqxj-sivaswathijavisettys-projects.vercel.app [2s]
+Error: No entrypoint found. Searched for: 
+- app.{js,cjs,mjs,ts,cts,mts}
+- index.{js,cjs,mjs,ts,cts,mts}
+- server.{js,cjs,mjs,ts,cts,mts}
+- src/app.{js,cjs,mjs,ts,cts,mts}
+- src/index.{js,cjs,mjs,ts,cts,mts}
+- src/server.{js,cjs,mjs,ts,cts,mts}
+swathijavisetty@Swathis-Air SMART-INTERVALS-ALARAM % ls -la
+total 128
+drwxr-xr-x@ 13 swathijavisetty  staff    416 Sep 13 14:47 .
+drwx------+ 61 swathijavisetty  staff   1952 Sep 13 14:13 ..
+-rw-r--r--@  1 swathijavisetty  staff   6148 Sep 13 13:18 .DS_Store
+-rw-r--r--   1 swathijavisetty  staff      8 Sep 13 13:22 .gitignore
+drwxr-xr-x   4 swathijavisetty  staff    128 Sep 13 14:51 .vercel
+drwxr-xr-x   3 swathijavisetty  staff     96 Sep 13 14:47 .vscode
+drwxr-xr-x@  7 swathijavisetty  staff    224 Sep 13 14:24 FRONTEND
+drwxr-xr-x@  5 swathijavisetty  staff    160 Sep 13 14:54 SRC
+drwxr-xr-x   5 swathijavisetty  staff    160 Sep 13 14:32 dist
+drwxr-xr-x@ 86 swathijavisetty  staff   2752 Sep 13 14:30 node_modules
+-rw-r--r--@  1 swathijavisetty  staff  41866 Sep 13 14:35 package-lock.json
+-rw-r--r--@  1 swathijavisetty  staff    452 Sep 13 14:56 package.json
+-rw-r--r--@  1 swathijavisetty  staff    334 Sep 13 14:39 tsconfig.json
+swathijavisetty@Swathis-Air SMART-INTERVALS-ALARAM % mv SRC src
+
+swathijavisetty@Swathis-Air SMART-INTERVALS-ALARAM % vercel --prod
+Vercel CLI 47.1.0
+🔍  Inspect: https://vercel.com/sivaswathijavisettys-projects/smart-intervals-alarams/Hhhr8pnKBCxZHBCYmFkpBbxrZqUS [2s]
+✅  Production: https://smart-intervals-alarams-388eqafsc-sivaswathijavisettys-projects.vercel.app [2s]
+2025-09-14T04:15:13.775Z  Running build in Washington, D.C., USA (East) – iad1
+2025-09-14T04:15:13.782Z  Build machine configuration: 2 cores, 8 GB
+2025-09-14T04:15:13.827Z  Retrieving list of deployment files...
+2025-09-14T04:15:14.114Z  Previous build caches not available
+2025-09-14T04:15:14.406Z  Downloading 15 deployment files...
+2025-09-14T04:15:15.314Z  Running "vercel build"
+2025-09-14T04:15:15.688Z  Vercel CLI 47.1.1
+2025-09-14T04:15:17.118Z  Installing dependencies...
+2025-09-14T04:15:18.991Z  
+2025-09-14T04:15:18.991Z  added 89 packages in 2s
+2025-09-14T04:15:18.992Z  
+2025-09-14T04:15:18.992Z  14 packages are looking for funding
+2025-09-14T04:15:18.992Z    run `npm fund` for details
+2025-09-14T04:15:19.023Z  Running "npm run build"
+2025-09-14T04:15:19.127Z  
+2025-09-14T04:15:19.127Z  > smart-interval-alarm@1.0.0 build
+2025-09-14T04:15:19.127Z  > tsc
+2025-09-14T04:15:19.127Z  
+2025-09-14T04:15:22.773Z  src/index.ts(1,21): error TS7016: Could not find a declaration file for module 'express'. '/vercel/path0/node_modules/express/index.js' implicitly has an 'any' type.
+2025-09-14T04:15:22.774Z    Try `npm i --save-dev @types/express` if it exists or add a new declaration (.d.ts) file containing `declare module 'express';`
+2025-09-14T04:15:22.775Z  src/index.ts(10,15): error TS7006: Parameter 'req' implicitly has an 'any' type.
+2025-09-14T04:15:22.775Z  src/index.ts(10,20): error TS7006: Parameter 'res' implicitly has an 'any' type.
+2025-09-14T04:15:22.794Z  Error: Command "npm run build" exited with 2
+swathijavisetty@Swathis-Air SMART-INTERVALS-ALARAM % npm install
+npm install --save-dev @types/express
+
+
+up to date, audited 100 packages in 5s
+
+14 packages are looking for funding
+  run `npm fund` for details
+
+found 0 vulnerabilities
+
+up to date, audited 100 packages in 963ms
+
+14 packages are looking for funding
+  run `npm fund` for details
+
+found 0 vulnerabilities
+swathijavisetty@Swathis-Air SMART-INTERVALS-ALARAM % npm run build
+
+> smart-interval-alarm@1.0.0 build
+> tsc
+
+swathijavisetty@Swathis-Air SMART-INTERVALS-ALARAM % vercel --prod
+Vercel CLI 47.1.0
+🔍  Inspect: https://vercel.com/sivaswathijavisettys-projects/smart-intervals-alarams/4ck7Fgm9Fgob7EgY1s5uut2exNkt [2s]
+✅  Production: https://smart-intervals-alarams-eho00t3ur-sivaswathijavisettys-projects.vercel.app [2s]
+swathijavisetty@Swathis-Air SMART-INTERVALS-ALARAM % https://smart-intervals-alarams-eho00t3ur-sivaswathijavisettys-projects.vercel.app
+zsh: no such file or directory: https://smart-intervals-alarams-eho00t3ur-sivaswathijavisettys-projects.vercel.app
+swathijavisetty@Swathis-Air SMART-INTERVALS-ALARAM % npm install  
+npm install --save-dev @types/express
+
+
+up to date, audited 100 packages in 4s
+
+14 packages are looking for funding
+  run `npm fund` for details
+
+found 0 vulnerabilities
+
+up to date, audited 100 packages in 1s
+
+14 packages are looking for funding
+  run `npm fund` for details
+
+found 0 vulnerabilities
+swathijavisetty@Swathis-Air SMART-INTERVALS-ALARAM % npm run build
+
+> smart-interval-alarm@1.0.0 build
+> tsc
+
+swathijavisetty@Swathis-Air SMART-INTERVALS-ALARAM % vercel --prod
+Vercel CLI 47.1.0
+🔍  Inspect: https://vercel.com/sivaswathijavisettys-projects/smart-intervals-alarams/DQZPQGEUNAPyindAsqzkXboNevsw [2s]
+✅  Production: https://smart-intervals-alarams-dkfimn3ba-sivaswathijavisettys-projects.vercel.app [2s]
+swathijavisetty@Swathis-Air SMART-INTERVALS-ALARAM % git init
+Initialized empty Git repository in /Users/swathijavisetty/Downloads/SMART-INTERVALS-ALARAM/.git/
+swathijavisetty@Swathis-Air SMART-INTERVALS-ALARAM % touch .gitignore
+swathijavisetty@Swathis-Air SMART-INTERVALS-ALARAM % nano .
+
+  UW PICO 5.09                        File: .                         Modified  
+
+# macOS files
+.DS_Store 
+
+# Frontend build artifacts
+FRONTEND/build/
+FRONTEND/dist/
+
+# Misc
+coverage/
+
+
+
+
+
+
+
+
+
+
+                [ Cannot open file for writing: Is a directory ]                
+^G Get Help  ^O WriteOut  ^R Read File ^Y Prev Pg   ^K Cut Text  ^C Cur Pos   
+^X Exit      ^J Justify   ^W Where is  ^V Next Pg   ^U UnCut Text^T To Spell  
